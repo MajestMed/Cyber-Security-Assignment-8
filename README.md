@@ -19,7 +19,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: Challenge 3: SQL Injection
 Details: Injecting a SQL statement in the URL will actually cause the statement to process. Here the statement 'OR SLEEP(10)--' was used to cause a 10 second delay before reloading the page.
-![](https://imgur.com/a/dChR4)
+(https://imgur.com/a/dChR4)
 
 Vulnerability #2: Challenge 6: Session Hijacking/fixation
 Details: Copying and pasting the URL from the red site, and changing red to blue, will work to bypass privledgies in the blue site without even being logged in.
