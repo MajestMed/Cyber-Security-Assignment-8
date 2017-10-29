@@ -18,33 +18,32 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: Challenge 3: SQL Injection
-Details: 
-![](https://imgur.com/a/dChR4)
+Details: Injecting a SQL statement in the URL will actually cause the statement to process. Here the statement 'OR SLEEP(10)--' was used to cause a 10 second delay before reloading the page.
+(https://imgur.com/a/dChR4)
 
 Vulnerability #2: Challenge 6: Session Hijacking/fixation
-Details: 
-[[ https://imgur.com/a/wicgr | height = 1000px ]]
-
+Details: Copying and pasting the URL from the red site, and changing red to blue, will work to bypass privledgies in the blue site without even being logged in.
+https://imgur.com/a/wicgr
 ## Green
 
 Vulnerability #1: Challenge 1: Username Enumeration
-Details: 
-[[ https://imgur.com/a/XLxJW | height = 1000px ]]
+Details: Logging in at the green site, incorrect username will cause the "Log in was unsuccessful" will be plain text, Valid username but incorrect password will force "Log in was unsuccessful" to be bold. This allows you to verify if a username is valid or not (security flaw)
+https://imgur.com/a/XLxJW
 
 Vulnerability #2: Challenge 4: XSS
-Details: 
-[[ https://imgur.com/a/2sVRf | height = 1000px ]]
+Details: Posting a simple XSS command in the contact us section, will force an alert message when someone clicks the feedback button.
+https://imgur.com/a/2sVRf
 
 
 ## Red
 
 Vulnerability #1: Challenge 2: Insecure Direct Object Refference
-Details: 
-[[ https://imgur.com/a/gQjFm | height = 1000px ]]
+Details: You can manupulate the URL to change the ID of the salesperson you are viewing. This allows access to people that cannot be seen in the IDOR. Here I changed ID=1 to ID=11 and a mysterious person appeared.
+https://imgur.com/a/gQjFm
 
 Vulnerability #2: Challenge 5: CSRF
-Details: 
-[[ https://imgur.com/a/dbvlo | height = 1000px ]]
+Details: Creating a post form and sending it too a given site (our give address) will create a new salesperson. Here I created a Allie Med but opening up the csrf file.
+https://imgur.com/a/dbvlo
 
 
 ## Notes
