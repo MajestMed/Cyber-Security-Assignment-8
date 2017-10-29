@@ -19,7 +19,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: Challenge 3: SQL Injection
 Details: 
-[[ https://imgur.com/a/dChR4 | height = 1000px ]]
+![](https://imgur.com/a/dChR4)
 
 Vulnerability #2: Challenge 6: Session Hijacking/fixation
 Details: 
